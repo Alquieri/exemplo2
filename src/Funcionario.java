@@ -11,7 +11,26 @@ public class Funcionario {
         this.nome = nome;
     }
     
+    public String getNome(){
+        return nome;
+    }
 
+    public int getMatricula(){
+        return matricula;
+    }
+
+    public void setNome(String nome){
+        this.nome = nome;
+    }
+
+    public void setMatricula(int matricula){
+        this.matricula = matricula;
+    }
+
+    @Override
+    public String toString(){
+        return nome;
+    }
 
 
 }
