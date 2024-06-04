@@ -1,5 +1,5 @@
 import java.util.ArrayList;
-public class BookRegister {
+public class BookManager {
 
 public static ArrayList<Book> books = new ArrayList<Book>();
 
@@ -10,21 +10,21 @@ public static void addBook(Book b){
 public static void removeBook(String title){
     for (int i = 0; i < books.size(); i++){
 
-        if (books.get(i).getTitle() == title){
-            System.out.println(books.get(i).toString() + "Are you sure you want to remove it?(y/n)");
+        if (books.get(i).getTitle().equals(title)){
+            System.out.println("\n"+books.get(i).toString() + "\nAre you sure you want to remove it?(y/n)");
             String answer = System.console().readLine();
-            if (answer == "y"){
+            if (answer.equals("y")){
                 books.remove(i);
             }
             else{
-                System.out.println("Operation aborted");
+                System.out.println("\nOperation aborted");
             }
         }
     }
 }
 public static void listBooks(){
-    if (books.size() == 0){
-        System.out.println("No books found");
+    if (books.isEmpty()){
+        System.out.println("\nNo books found");
     }
     for (int i = 0; i < books.size(); i++){
         System.out.println(books.get(i).toString());
