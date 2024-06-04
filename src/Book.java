@@ -42,7 +42,8 @@ public class Book{
     public void setYear(String year){
         this.year = year;
     }
-
+    
+    @Override
     public String toString(){
         return "Title: " + title + "\nAuthor: " + author + "\nYear: " + year + "\nStatus: " + status;
     }
