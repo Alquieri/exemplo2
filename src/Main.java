@@ -1,5 +1,7 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        Book book = new Book("Title", "Author", "Year", "Status");
+        BookRegister.addBook(book.getTitle(), book.getAuthor(), book.getYear(), book.getStatus());
+        BookRegister.listBooks();
     }
 }
