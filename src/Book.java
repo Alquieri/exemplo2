@@ -5,7 +5,7 @@ public class Book{
     private String year;
     private boolean status;
 
-    public Book(String title, String author, String year, String status){
+    public Book(String title, String author, String year, boolean status){
         this.title = title;
         this.author = author;
         this.year = year;
