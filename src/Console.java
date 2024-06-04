@@ -6,6 +6,7 @@ public class Console {
 
     public static String readLine(){
         return scanner.nextLine();
+        
     }
 
     public static int readInt(){
@@ -20,15 +21,6 @@ public class Console {
 }
     public static double readDouble(){
         
-        try{
-            return scanner.nextDouble();
-
-        }catch (Exception e){
-            System.out.println("Invalid input");
-            scanner.nextLine();
-            return readDouble();
-        }finally{
-            scanner.nextLine();
-        }
-    }
+        return scanner.nextDouble();
+}
 }
